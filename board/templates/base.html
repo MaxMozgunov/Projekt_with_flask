@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Massage Board - {% block titel %}{% endblock titel %}</title>
+</head>
+<body>
+<h1>Massage Board</h1>
+    <section>
+    <header>
+    {% block header %}{%endblock header %}
+    </header>
+    <main>
+        {% block content %}
+        <p>No massages</p>
+        {% endblock content %}
+
+    </main>
+        </section>
+</body>
+</html>
