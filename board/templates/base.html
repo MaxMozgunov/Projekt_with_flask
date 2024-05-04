@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Massage Board - {% block titel %}{% endblock titel %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
 </head>
 <body>
 <h1>Massage Board</h1>
+    {% include("_navigation.html") %}
     <section>
     <header>
     {% block header %}{%endblock header %}
