@@ -12,6 +12,11 @@
     <section>
     <header>
     {% block header %}{%endblock header %}
+<!--        <div class="flash success">All right</div>-->
+<!--        <div class="flash error">Ohh, you have error!</div>-->
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+        <div class="flash {{ category }}">{{ message }}</div>
+    {% endfor %}
     </header>
     <main>
         {% block content %}

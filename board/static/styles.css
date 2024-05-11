@@ -64,3 +64,11 @@ form {
   border: 1px solid #ccc;
   font-size: 1em;
 }
+
+.success {
+background: green
+}
+
+.error{
+background: red
+}
